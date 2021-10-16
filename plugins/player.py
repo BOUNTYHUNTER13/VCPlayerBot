@@ -32,7 +32,7 @@ async def add_to_playlist(_, message: Message):
     if Config.ADMIN_ONLY == "Y":
         admins = await get_admins(Config.CHAT)
         if message.from_user.id not in admins:
-            await message.reply_sticker("CAADBQADsQIAAtILIVYld1n74e3JuQI")
+            await message.reply_text("STB The Gawd")
             return
     type=""
     yturl=""
